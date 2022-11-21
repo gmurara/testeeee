@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef8088c7e9fec62995f0a1040b1b6790 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ef8088c7e9fec62995f0a1040b1b6790" ></div>
+        
+</body>
+<script>    
+    
+            var map_ef8088c7e9fec62995f0a1040b1b6790 = L.map(
+                "map_ef8088c7e9fec62995f0a1040b1b6790",
+                {
+                    center: [-27.570838, -50.6216109],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7.48,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b6deb2ba56b84dd22959847183eb3191 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var marker_fb8eac3a17adc1f1b159f5259cdfcd13 = L.marker(
+                [-26.8902, -49.08461],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_233a0a6bde5a820882cd86620e30098e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fb8eac3a17adc1f1b159f5259cdfcd13.setIcon(icon_233a0a6bde5a820882cd86620e30098e);
+        
+    
+        var popup_7c18b6950d1b04fafc58f3da62f55b31 = L.popup({"maxWidth": 320});
+
+        
+            var html_f1b05d13955d2a4582f3b9d36d1816fb = $(`<div id="html_f1b05d13955d2a4582f3b9d36d1816fb" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>CIB - Centro de Inovação de Blumenau</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🏭 Eletro Metal Mecânico</br> <br>🏭 Têxtil</br> <br>🎭 Turismo</br>  <br>🛒 Comércio</br> <br>🩺 Saúde</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="http://novo.institutogene.org.br/"><img src="https://d1fdloi71mui9q.cloudfront.net/IIaV1i0tS5OIfpXciRMd_NI5RcqO9Ep3CT6h7" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2021/10/fachada2-scaled.jpg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_7c18b6950d1b04fafc58f3da62f55b31.setContent(html_f1b05d13955d2a4582f3b9d36d1816fb);
+        
+
+        marker_fb8eac3a17adc1f1b159f5259cdfcd13.bindPopup(popup_7c18b6950d1b04fafc58f3da62f55b31)
+        ;
+
+        
+    
+    
+            var marker_0474d8f3a4d95c623455b3e4fb9fdaa1 = L.marker(
+                [-27.048659999999998, -48.876490000000004],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_f0ca222fb5b9ecf5028f8708e5a4d2f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_0474d8f3a4d95c623455b3e4fb9fdaa1.setIcon(icon_f0ca222fb5b9ecf5028f8708e5a4d2f8);
+        
+    
+        var popup_4b1f434cb2cd34d8a848ca63f79708e9 = L.popup({"maxWidth": 320});
+
+        
+            var html_8828b3964f703f41a0b58cc23aac004d = $(`<div id="html_8828b3964f703f41a0b58cc23aac004d" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>408lab</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🏭 Moda</br> <br>🛒 Varejo</br> <br>🏭 Automação Industrial</br> <br>📖 Educação</br> <br>🩺 Saúde</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="www.408lab.com/"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/Brusque-5.jpg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_4b1f434cb2cd34d8a848ca63f79708e9.setContent(html_8828b3964f703f41a0b58cc23aac004d);
+        
+
+        marker_0474d8f3a4d95c623455b3e4fb9fdaa1.bindPopup(popup_4b1f434cb2cd34d8a848ca63f79708e9)
+        ;
+
+        
+    
+    
+            var marker_0a985d65156eba5f88f13a5524b86729 = L.marker(
+                [-26.77686, -51.01565],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_a402bf41a1efddfaf15027d814ff688b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0a985d65156eba5f88f13a5524b86729.setIcon(icon_a402bf41a1efddfaf15027d814ff688b);
+        
+    
+        var popup_7ee7745eab720e4cb030e67d0b24a9fd = L.popup({"maxWidth": 320});
+
+        
+            var html_abc21b696dbcfc3c88318920fa32b40f = $(`<div id="html_abc21b696dbcfc3c88318920fa32b40f" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Inova Contestado</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🌱 Indústria florestal</br> <br>🌱 Alimentos</br> <br>🏭 Plástico</br> <br>🏭 Têxtil</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="inovacontestado.com.br/home"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/1-2-scaled.jpg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_7ee7745eab720e4cb030e67d0b24a9fd.setContent(html_abc21b696dbcfc3c88318920fa32b40f);
+        
+
+        marker_0a985d65156eba5f88f13a5524b86729.bindPopup(popup_7ee7745eab720e4cb030e67d0b24a9fd)
+        ;
+
+        
+    
+    
+            var marker_821462d879f957e66ada30abb294b711 = L.marker(
+                [-27.09283, -52.66336999999999],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_cd501eb5cff05e6e069d9386cb138f29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_821462d879f957e66ada30abb294b711.setIcon(icon_cd501eb5cff05e6e069d9386cb138f29);
+        
+    
+        var popup_510f51ca955ab1c6040e09fd68fb430b = L.popup({"maxWidth": 320});
+
+        
+            var html_053089e9aab68b461da2aebb289de54b = $(`<div id="html_053089e9aab68b461da2aebb289de54b" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Pollen Parque Científico e Tecnológico</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🌱 Agro</br> <br>🩺 Saúde</br> <br>🏭 Máquinas e Equipamentos</br> <br>💻 TIC</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="nan"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/08/Ci-Chapeco-2.jpeg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_510f51ca955ab1c6040e09fd68fb430b.setContent(html_053089e9aab68b461da2aebb289de54b);
+        
+
+        marker_821462d879f957e66ada30abb294b711.bindPopup(popup_510f51ca955ab1c6040e09fd68fb430b)
+        ;
+
+        
+    
+    
+            var marker_dff86b3aec402e5f2a7e521a2147e78a = L.marker(
+                [-28.679040000000004, -49.35522],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_24bd7063e08f013bba90ea691d54ab82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_dff86b3aec402e5f2a7e521a2147e78a.setIcon(icon_24bd7063e08f013bba90ea691d54ab82);
+        
+    
+        var popup_6a2ee3c5bb27a6dcd462baf69b0a2ae6 = L.popup({"maxWidth": 320});
+
+        
+            var html_183de5d15274bd4b2b1d926b7eb07bff = $(`<div id="html_183de5d15274bd4b2b1d926b7eb07bff" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>CRIO</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🏭 Cerâmica</br> <br>🏭 Plásticos</br> <br>🏭 Moda</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="nan"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/criciuma-1.png" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_6a2ee3c5bb27a6dcd462baf69b0a2ae6.setContent(html_183de5d15274bd4b2b1d926b7eb07bff);
+        
+
+        marker_dff86b3aec402e5f2a7e521a2147e78a.bindPopup(popup_6a2ee3c5bb27a6dcd462baf69b0a2ae6)
+        ;
+
+        
+    
+    
+            var marker_985993a0283157bbe8d551745f81e291 = L.marker(
+                [-27.54468, -48.50019],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_a5132b6170e57cb997a70a493da4d9d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_985993a0283157bbe8d551745f81e291.setIcon(icon_a5132b6170e57cb997a70a493da4d9d0);
+        
+    
+        var popup_2a8774411b9795bdc71c193866549ab9 = L.popup({"maxWidth": 320});
+
+        
+            var html_5aba57ec470835c397d00c35b5dd2c25 = $(`<div id="html_5aba57ec470835c397d00c35b5dd2c25" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Associação Catarinense de Tecnologia - ACATE</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>💸 Fintech</br> <br>📖 Edtech</br> <br>💡 Energia</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="https://www.acate.com.br/"><img src="https://www.acate.com.br/wp-content/uploads/2018/08/logotipo.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/IMG_5239-scaled.jpg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_2a8774411b9795bdc71c193866549ab9.setContent(html_5aba57ec470835c397d00c35b5dd2c25);
+        
+
+        marker_985993a0283157bbe8d551745f81e291.bindPopup(popup_2a8774411b9795bdc71c193866549ab9)
+        ;
+
+        
+    
+    
+            var marker_7121c1560519e5c01d61a2f53f3c1217 = L.marker(
+                [-26.953129999999998, -48.72815],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_f5233d5b117169462d829ba8f57223a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_7121c1560519e5c01d61a2f53f3c1217.setIcon(icon_f5233d5b117169462d829ba8f57223a2);
+        
+    
+        var popup_dfb60f13b86b2f7ef5f4b76ada4d4b6b = L.popup({"maxWidth": 320});
+
+        
+            var html_e988de34092281c660b62619ed0ebf7d = $(`<div id="html_e988de34092281c660b62619ed0ebf7d" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Centro Regional de Inovação</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🚛 Logística</br> <br>🛌 Turismo</br> <br>🌱 Economia do Mar</br> <br>🏭 Indústria Naval</br> <br>🩺 Saúde</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="https://crinovacao.com.br/"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="nan" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_dfb60f13b86b2f7ef5f4b76ada4d4b6b.setContent(html_e988de34092281c660b62619ed0ebf7d);
+        
+
+        marker_7121c1560519e5c01d61a2f53f3c1217.bindPopup(popup_dfb60f13b86b2f7ef5f4b76ada4d4b6b)
+        ;
+
+        
+    
+    
+            var marker_f9736311ee195caf9d33ae09accd16f8 = L.marker(
+                [-26.4627, -49.12198],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_06b8e70b7465f372a890c7a697f4548d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f9736311ee195caf9d33ae09accd16f8.setIcon(icon_06b8e70b7465f372a890c7a697f4548d);
+        
+    
+        var popup_6a3a4be0de5ff7294f06f39c9a24cf7d = L.popup({"maxWidth": 320});
+
+        
+            var html_e159ee33604d7debac7208fc33476d37 = $(`<div id="html_e159ee33604d7debac7208fc33476d37" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Novale Hub</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>💻 TIC</br> <br>💡 Energia</br> <br>🏭 Eletrometalmecânica</br> <br>🏭 Químicos e novos materiais</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="http://www.novalehub.com.br/"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/Fachada-CI-Jaragua-scaled.jpg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_6a3a4be0de5ff7294f06f39c9a24cf7d.setContent(html_e159ee33604d7debac7208fc33476d37);
+        
+
+        marker_f9736311ee195caf9d33ae09accd16f8.bindPopup(popup_6a3a4be0de5ff7294f06f39c9a24cf7d)
+        ;
+
+        
+    
+    
+            var marker_2fd17e944311d96678de6e4f09b20eb3 = L.marker(
+                [-27.167579999999997, -51.52045],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_15d3d7d96637d3c07a4874f27090abe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2fd17e944311d96678de6e4f09b20eb3.setIcon(icon_15d3d7d96637d3c07a4874f27090abe9);
+        
+    
+        var popup_9fff95dfabf2964f74036be3254e1e6a = L.popup({"maxWidth": 320});
+
+        
+            var html_815d3c305aa341d1691be5a3c76bf26a = $(`<div id="html_815d3c305aa341d1691be5a3c76bf26a" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Polo de Inovação Vale do Rio do Peixe – Inovale</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🌱 Alimentos</br> <br>🩺 Engenharia Biomédica</br> <br>💡 Energias Renováveis</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="https://www.poloinovale.com.br/"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/Ci-Joacaba-sol.jpeg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_9fff95dfabf2964f74036be3254e1e6a.setContent(html_815d3c305aa341d1691be5a3c76bf26a);
+        
+
+        marker_2fd17e944311d96678de6e4f09b20eb3.bindPopup(popup_9fff95dfabf2964f74036be3254e1e6a)
+        ;
+
+        
+    
+    
+            var marker_44ef8c725ef4e73a998a40cada2b58fc = L.marker(
+                [-26.23589, -48.88243],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_31e41f3453775008ca9ecf20588d84ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_44ef8c725ef4e73a998a40cada2b58fc.setIcon(icon_31e41f3453775008ca9ecf20588d84ae);
+        
+    
+        var popup_7ba214ee6f57030a6f1ca29fb9ebfaaa = L.popup({"maxWidth": 320});
+
+        
+            var html_a18a44a7552000317c9d44d496744ee7 = $(`<div id="html_a18a44a7552000317c9d44d496744ee7" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Ágora Tech Park</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🩺 Saúde</br> <br>🏭 Indústria 4.0</br> <br>🏛 Cidades inteligentes</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="https://www.agoratechpark.com.br/"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/Centro-de-Inova%C3%A7%C3%A3o-%C3%81gora.jpg7jpg.jpg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_7ba214ee6f57030a6f1ca29fb9ebfaaa.setContent(html_a18a44a7552000317c9d44d496744ee7);
+        
+
+        marker_44ef8c725ef4e73a998a40cada2b58fc.bindPopup(popup_7ba214ee6f57030a6f1ca29fb9ebfaaa)
+        ;
+
+        
+    
+    
+            var marker_82a7e6a8bc35c778571e93a2a3279eef = L.marker(
+                [-27.801479999999998, -50.3372],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_4d4389dc09294712bb5cd42cb02f6fcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_82a7e6a8bc35c778571e93a2a3279eef.setIcon(icon_4d4389dc09294712bb5cd42cb02f6fcb);
+        
+    
+        var popup_09bfee8ef157449136f78f7db3219da2 = L.popup({"maxWidth": 320});
+
+        
+            var html_7ebab8cd94d36f9c33ed9fc8781b5471 = $(`<div id="html_7ebab8cd94d36f9c33ed9fc8781b5471" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Orion Parque Tecnológico</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🩺 Saúde</br> <br>🌱 Agro</br> <br>🩺 Biotecnologia</br> <br>🏛 Governo</br> <br>🚛 Logística</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="https://www.orionparque.com/"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="nan" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_09bfee8ef157449136f78f7db3219da2.setContent(html_7ebab8cd94d36f9c33ed9fc8781b5471);
+        
+
+        marker_82a7e6a8bc35c778571e93a2a3279eef.bindPopup(popup_09bfee8ef157449136f78f7db3219da2)
+        ;
+
+        
+    
+    
+            var marker_ec242995b97dafc5a75d384e735c37dd = L.marker(
+                [-27.21865, -49.64812],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_4fa4f37d6cdad1319791f39827c66d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec242995b97dafc5a75d384e735c37dd.setIcon(icon_4fa4f37d6cdad1319791f39827c66d2d);
+        
+    
+        var popup_4f2cce8a249068a647789ebfca0d2b4b = L.popup({"maxWidth": 320});
+
+        
+            var html_3687bae19bcc69c1e0b3e11cf7d9a1bd = $(`<div id="html_3687bae19bcc69c1e0b3e11cf7d9a1bd" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Centro de Inovação Norberto Frahm - CINF</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🩺 Desenvolvimento Social</br> <br>💻 TIC</br> <br>💻 Gestão e Automação de Processos</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="https://cinf.com.br/"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2021/02/Foto-CINF.png" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_4f2cce8a249068a647789ebfca0d2b4b.setContent(html_3687bae19bcc69c1e0b3e11cf7d9a1bd);
+        
+
+        marker_ec242995b97dafc5a75d384e735c37dd.bindPopup(popup_4f2cce8a249068a647789ebfca0d2b4b)
+        ;
+
+        
+    
+    
+            var marker_12300eb8f35195bd836777a6cd79cdec = L.marker(
+                [-26.24792, -49.38215],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_a77e185577283b20394e8f08186f35d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_12300eb8f35195bd836777a6cd79cdec.setIcon(icon_a77e185577283b20394e8f08186f35d3);
+        
+    
+        var popup_404709f39e26359fe4c1073d7b869314 = L.popup({"maxWidth": 320});
+
+        
+            var html_e100ef28cddf23b1c626fcbd2dfcc8a4 = $(`<div id="html_e100ef28cddf23b1c626fcbd2dfcc8a4" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Centro de Inovação da Região do Planalto Norte</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🏭 Metalmecânica e Automação</br> <br>💻 TIC</br> <br>🩺 Saúde</br> <br>🏭 Química e Materiais</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="www.ciplanaltonorte.com.br"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="nan" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_404709f39e26359fe4c1073d7b869314.setContent(html_e100ef28cddf23b1c626fcbd2dfcc8a4);
+        
+
+        marker_12300eb8f35195bd836777a6cd79cdec.bindPopup(popup_404709f39e26359fe4c1073d7b869314)
+        ;
+
+        
+    
+    
+            var marker_e8194cfe2b205809c09f8390940b6c98 = L.marker(
+                [-28.470409999999998, -49.00092],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_cdb20349111199b66b11fc9131da7d06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e8194cfe2b205809c09f8390940b6c98.setIcon(icon_cdb20349111199b66b11fc9131da7d06);
+        
+    
+        var popup_ff53a1956c9a8ae1221301a4e31d6406 = L.popup({"maxWidth": 320});
+
+        
+            var html_a6edc2bb435070cd4ed6842116f7d50d = $(`<div id="html_a6edc2bb435070cd4ed6842116f7d50d" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Centro de Inovação de Tubarão</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🩺 Saúde</br> <br>💡 Energias Renováveis</br> <br>🏛 Cidades Inteligentes</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="nan"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/DSC_0085-scaled.jpg" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_ff53a1956c9a8ae1221301a4e31d6406.setContent(html_a6edc2bb435070cd4ed6842116f7d50d);
+        
+
+        marker_e8194cfe2b205809c09f8390940b6c98.bindPopup(popup_ff53a1956c9a8ae1221301a4e31d6406)
+        ;
+
+        
+    
+    
+            var marker_744363b7cd602a1fdae6aab4087195ea = L.marker(
+                [-27.02542, -51.14561],
+                {}
+            ).addTo(map_ef8088c7e9fec62995f0a1040b1b6790);
+        
+    
+            var icon_39aafdcc0c92228c1d56188d37cfdc93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_744363b7cd602a1fdae6aab4087195ea.setIcon(icon_39aafdcc0c92228c1d56188d37cfdc93);
+        
+    
+        var popup_eef51c1372e7ced60f17b77a65fe8106 = L.popup({"maxWidth": 320});
+
+        
+            var html_5fa48c7be126b5ea16ef8a1490d3d0bb = $(`<div id="html_5fa48c7be126b5ea16ef8a1490d3d0bb" style="width: 100.0%; height: 100.0%;">      <!DOCTYPE html> <html>  <table border="0" cellpadding="1" cellspacing="1" style="width:320px"> 	<tbody> 		<tr> 			<td rowspan="3" style="vertical-align:top; width:309px"> 			<p><strong>Centro: </strong>Centro de Inovação Dante Martorano</p>  			<p><span style="font-size:11px"><strong>Especialidades: </strong><br>🌱 Agro</br> <br>🏭 Processamento de Alimentos</br> <br>🛌 Turismo</br></span></p> 			</td> 			<td style="text-align:center; width:150px; vertical-align:top"><a href="nan"><img src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/06/Mapa_cinza-480x310.png" width="100"></a></td> 		</tr>         		<tr> 			<td style="text-align:center; width:177px"><img alt="" src="http://centrosdeinovacao.sc.gov.br/wp-content/uploads/2020/07/videira-1.png" style="height:100px; width:150px" /></td> 		</tr> 		<tr> 			<td style="text-align:center; width:150px"><a href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-florianopolis/">Saiba mais</a></td> 		</tr> 	</tbody> </table>   </html> </div>`)[0];
+            popup_eef51c1372e7ced60f17b77a65fe8106.setContent(html_5fa48c7be126b5ea16ef8a1490d3d0bb);
+        
+
+        marker_744363b7cd602a1fdae6aab4087195ea.bindPopup(popup_eef51c1372e7ced60f17b77a65fe8106)
+        ;
+
+        
+    
+</script>
